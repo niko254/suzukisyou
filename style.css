@@ -24,21 +24,18 @@ li {
   font-size:40px;
   opacity:0;
   animation-name: sample01; /*←@keyframesにも同じ名前を記述*/
-  animation-duration: 8s; 
+  animation-duration: 3s; 
   animation-fill-mode: forwards; 
 }
 @keyframes sample01 {  /*←animation-nameにも同じ名前を記述*/
 0% {
   opacity: 0;
-  color:#ffffff;
 }
 90% {
  opacity: 1;
- color:#ffffff;
 }
  100% {
   opacity: 1;
-  color:#ffffff;
 } 
 }
 
