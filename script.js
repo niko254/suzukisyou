@@ -1,3 +1,10 @@
+$(document).on('ready', function () {
+    setTimeout(function () {
+        $('.letter').addClass('loaded');
+        $('.reg-text').addClass('loaded');
+    }, 1000);
+});
+
 let $pending_button = document.getElementById("pending-button");
 let $done_button = document.getElementById("done-button");
 let $pending_content = document.getElementById("pending-content");
@@ -31,9 +38,3 @@ document.getElementById("done-button").onclick = function() {
   document.getElementById("done-button").style.display = "none";
 };
 
-$(document).on('ready', function () {
-    setTimeout(function () {
-        $('.letter').addClass('loaded');
-        $('.reg-text').addClass('loaded');
-    }, 1000);
-});
