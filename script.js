@@ -30,3 +30,10 @@ $pending_button.classList.toggle("active")
 document.getElementById("done-button").onclick = function() {
   document.getElementById("done-button").style.display = "none";
 };
+
+$(document).on('ready', function () {
+    setTimeout(function () {
+        $('.letter').addClass('loaded');
+        $('.reg-text').addClass('loaded');
+    }, 1000);
+});
