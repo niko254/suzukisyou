@@ -16,24 +16,8 @@ const quiz = [
     correct : '1159'
   },
   {
-    question:'平清盛が太政大臣となる',
-    correct: '1167'
-  },
-  {
-    question:'源平の戦い',
-    correct: '1180'
-  },
-  {
-    question:'源頼朝が守護地頭を設置',
-    correct: '1185'
-  },
-  {
-    question:'平家滅亡',
-    correct: '1185'
-  },
-  {
-    question:'源頼朝が征夷大将軍となる',
-    correct: '1192'
+    question: '平清盛が太政大臣となる',
+    correct: ''
   },
 ];
 quiz.sort(() => 0.5 - Math.random());
@@ -77,7 +61,7 @@ submitButton.addEventListener('click', () => {
 
 const showAllAnswers = () => {
   const container = document.getElementById('all-answers-container');
-  http://container.style.display = 'block';
+  container.style.display = 'block';
   
   const tbody = document.getElementById('all-answers-tbody');
   for (const q of quiz) {
