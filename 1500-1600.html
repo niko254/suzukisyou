@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja" >
+<head>
+  <meta charset="UTF-8">
+  <title>1500-1600</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+<div class="container">
+
+  <div id="js-question" class=" py-2 bg-green-400 text-white flex justify-between rounded shadow-xl" role="alert">
+  【注意】JAVAScriptをオンにしてください。
+  </div>
+
+  <div class="text-2xl pt-3"><input type="text" id="answer-input"></div>
+  <div class="pt-2"><button type="button" class="py-1.5 px-3 flex items-center space-x-2 transition-colors  bg-green-600 border active:bg-green-800 font-medium border-green-700 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 shadow-xl" id="submit-button"><svg class="h-6 w-6 flex-none fill-green-100 stroke-green-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="11" />
+                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+              </svg><a class="font-bold text-xl ">回答する</a></button></div>
+
+  <div id="all-answers-container" style="display: none">
+    <h2>答え合わせ</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>問題</th>
+          <th>あなたの答え</th>
+          <th>正答</th>
+          <th>正誤</th>
+        </tr>
+      </thead>
+      <tbody id="all-answers-tbody">
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<!-- partial -->
+  <script  src="./script7.js"></script>
+
+</body>
+</html>
