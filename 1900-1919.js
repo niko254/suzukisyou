@@ -85,7 +85,7 @@ submitButton.addEventListener('click', () => {
 
 const showAllAnswers = () => {
   const container = document.getElementById('all-answers-container');
-  http://container.style.display = 'block';
+  container.style.display = 'block';
   
   const tbody = document.getElementById('all-answers-tbody');
   for (const q of quiz) {
